@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_dialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_edit_money"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@dimen/text_size_dialog"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_note"
+            android:textSize="@dimen/text_size_dialog"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/editNote"
+            android:layout_width="@dimen/width_edit_text_dialog"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_edit_note"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_money"
+            android:textSize="@dimen/text_size_dialog"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/editMoney"
+            android:layout_width="@dimen/width_edit_text_dialog"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/buttonEditMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/text_edit_button" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

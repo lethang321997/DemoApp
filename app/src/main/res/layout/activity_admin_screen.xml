@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context=".admin_screen.AdminScreen"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="@dimen/padding_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_list_user"
+            android:textColor="@color/colorGreen"
+            android:text="@string/text_list_user"
+            tools:ignore="SpUsage" />
+        <Button
+            android:id="@+id/buttonLogOutAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_logout_button"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/button_red"
+            android:text="@string/text_logout" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

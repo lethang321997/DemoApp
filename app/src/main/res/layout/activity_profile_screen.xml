@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/unnamed"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding_left_layout_profile"
+    tools:context=".profile_screen.ProfileScreen"
+    tools:ignore="RtlSymmetry">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_text_profile_screen"
+        android:text="@string/text_profile"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_profile_title"
+        android:textColor="@color/colorGreen"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:text="@string/text_id"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/idProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:textColor="@color/colorBlack"
+            android:text=""
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:text="@string/text_username"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/usernameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:text=""
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:textColor="@color/colorBlack"
+            android:text="@string/text_name"
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/nameProfile"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:text=""
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+        <Button
+            android:id="@+id/buttonEditName"
+            android:layout_width="match_parent"
+            android:background="@drawable/button"
+            android:layout_height="wrap_content"
+            android:text="@string/text_edit_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:textColor="@color/colorBlack"
+            android:text="@string/text_password"
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/passwordProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/padding_text_profile_screen"
+            android:password="true"
+            android:text=""
+            android:textSize="@dimen/text_size_profile_screen"
+            tools:ignore="Deprecated,SpUsage,TextViewEdits" />
+        <Button
+            android:id="@+id/buttonEditPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/text_edit_button" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonDeleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_delete_button"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/button_red"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_delete_button"
+        android:layout_marginTop="@dimen/margin_top_delete_button"/>
+
+
+
+
+</LinearLayout>

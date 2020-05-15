@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".home_screen.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_name_app"
+        android:text="@string/name_app"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/text_size_name_app"
+        android:textStyle="italic|bold"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_horizontal_user_password">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_username"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_sign_in_layout"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/text_username"
+            android:layout_width="@dimen/width_edit_text_sign_in"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_edit_text_sign_in"
+            android:autofillHints=""
+            android:inputType="text"
+            android:textSize="@dimen/text_size_sign_in_layout"
+            tools:ignore="LabelFor,SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_horizontal_user_password">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_password"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_sign_in_layout"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/text_password"
+            android:layout_width="@dimen/width_edit_text_sign_in"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_edit_text_sign_in"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_sign_in_layout"
+            android:autofillHints=""
+            tools:ignore="LabelFor,SpUsage" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_sign_in_button"
+        android:background="@drawable/button"
+        android:text="@string/text_sign_in_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_text_sign_up"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_text_sign_up"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_sign_up_button"
+        android:background="@drawable/button"
+        android:text="@string/text_sign_up_button" />
+
+
+</LinearLayout>
